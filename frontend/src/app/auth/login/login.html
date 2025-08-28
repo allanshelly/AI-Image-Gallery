@@ -1,6 +1,6 @@
 <div class="login-container">
   <div class="login-card">
-    <h1>Welcome 👋</h1>
+    <h1>Welcome</h1>
     <p>Please log in to continue</p>
 
     <form (ngSubmit)="login()">
@@ -19,7 +19,7 @@
 
     <div class="alt-action">
       <p>Don’t have an account?</p>
-      <button (click)="signup()">Sign Up</button>
+      <button (click)="router.navigate(['/signup'])">Sign Up</button>
     </div>
   </div>
 </div>

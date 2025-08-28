@@ -15,7 +15,7 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
-  constructor(private supabase: SupabaseService, private router: Router) {}
+  constructor(private supabase: SupabaseService, public router: Router) {}
 
   async login() {
     const { data, error } = await this.supabase.signIn(this.email, this.password);

@@ -19,7 +19,7 @@ export class SignupComponent {
   password: string = '';
   message: string = '';
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, public router: Router) {}
 
   async signup() {
     const { data, error } = await this.authService.signup(this.email, this.password);
