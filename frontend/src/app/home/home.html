@@ -1,0 +1,8 @@
+<div class="home-container" *ngIf="auth.user; else noUser">
+  <h2>Welcome, {{ auth.user.email }}</h2>
+  <button (click)="logout()">Logout</button>
+</div>
+
+<ng-template #noUser>
+  <p>You are not logged in. <a routerLink="/login">Go to Login</a></p>
+</ng-template>

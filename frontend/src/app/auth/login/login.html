@@ -1,0 +1,25 @@
+<div class="login-container">
+  <div class="login-card">
+    <h1>Welcome 👋</h1>
+    <p>Please log in to continue</p>
+
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" [(ngModel)]="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" [(ngModel)]="password" name="password" required />
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="alt-action">
+      <p>Don’t have an account?</p>
+      <button (click)="signup()">Sign Up</button>
+    </div>
+  </div>
+</div>
